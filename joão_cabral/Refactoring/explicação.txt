@@ -1,0 +1,7 @@
+Substituir a estrutura pela aplicação do poliformismo baseado na implementação
+de uma interface que possibilida trasferir o comportamento para classes especializadas
+é o ideal. Pois, gera um alto aclopamento, uma vez que toda manutenção se dá nas classes
+que implemntam a interface e não nas classes que a instanciam. Além de, no caso da adiação
+uma forma de pagamento, não é necessário adicionar uma nova condição em cada parte do projeto
+que tem usa o ProcessadorPagamento, mas basta criar uma nova classe que implementa a interface
+MetodosPagamento.

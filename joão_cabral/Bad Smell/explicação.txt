@@ -1,0 +1,8 @@
+O uso do switch usado nesta implementação aumenta o acoplamento entre as classes,
+pois a classe que o implementa deve ter conhecimento explícito de todos os tipos,
+constates ou casos para decidir o bloco de execução.
+
+Também é comum que essa lógica condicional seja usada em outras partes de um projet,
+logo seria necessário reescrevô-lo em cada classe que a necessite gerando problemas
+quando houver de manuntênção, pois haveria a necessidade de corrigir o código
+em cada classe que o implementa. 
