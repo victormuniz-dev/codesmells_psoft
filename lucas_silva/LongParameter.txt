@@ -1,0 +1,21 @@
+1. Long Parameter List (Lista Longa de Parâmetros)
+
+Este é outro cheiro (smell) de código no mesmo nível de abstração que o Método Longo (Long Method). Ele ocorre quando três, quatro ou mais parâmetros são definidos como entrada para um único método. Basicamente, quanto mais longa for a lista de parâmetros, mais difícil é de entender e manter o código.
+
+2. Causação / Origem
+
+Na tentativa de generalizar uma rotina com múltiplas variações, um desenvolvedor pode ter passado parâmetros em excesso em um determinado ponto. Outra causa pode ser a falta de percepção sobre o relacionamento entre os objetos, passando variáveis soltas como parâmetro em vez de utilizar o próprio objeto que as agrupa.
+
+3. Problemas
+
+Difícil de usar
+O uso de um método com muitos parâmetros exige mais conhecimento do desenvolvedor para chamá-lo corretamente.
+
+Maior Complexidade
+A entrada de dados torna-se altamente inconsistente, aumentando a variedade e a imprevisibilidade do que pode acontecer durante a execução.
+
+Violação do Princípio da Responsabilidade Única (SRP)
+Quando há muitos parâmetros, é muito provável que o método esteja tentando fazer coisas demais ou possua muitas razões para ser modificado.
+
+Referência:
+https://luzkan.github.io/smells/long-parameter-list
